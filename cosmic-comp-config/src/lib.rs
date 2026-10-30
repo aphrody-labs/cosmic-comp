@@ -138,10 +138,11 @@ impl Default for CosmicCompConfig {
             input_devices: Default::default(),
             xkb_config: Default::default(),
             keyboard_config: Default::default(),
-            autotile: Default::default(),
+            // Bun OS: keyboard-first tiling by default (Omarchy), focus follows the pointer (Hyprland follow_mouse = 1).
+            autotile: true,
             autotile_behavior: Default::default(),
             active_hint: true,
-            focus_follows_cursor: false,
+            focus_follows_cursor: true,
             cursor_follows_focus: false,
             focus_follows_cursor_delay: 250,
             descale_xwayland: XwaylandDescaling::Fractional,

@@ -39,8 +39,9 @@ pub enum WorkspaceMode {
 
 #[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
 pub enum WorkspaceLayout {
-    #[default]
     Vertical,
+    // Bun OS: workspaces sit side by side (Omarchy numbering 1..0 left to right).
+    #[default]
     Horizontal,
 }
 
