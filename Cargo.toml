@@ -146,5 +146,6 @@ lto = "fat"
 cosmic-protocols = { git = "https://github.com/pop-os//cosmic-protocols", branch = "main" }
 
 [patch.crates-io]
-smithay = { git = "https://github.com/smithay/smithay.git", rev = "cf43a02" }
+# Bun OS: smithay cf43a02 + the WSLg read-only /tmp/.X11-unix fix (abstract X socket only), aphrody-labs/smithay bunos/cosmic-comp-cf43a02.
+smithay = { git = "https://github.com/aphrody-labs/smithay.git", rev = "098c6aa" }
 smithay-egui = { git = "https://github.com/Smithay/smithay-egui.git", rev = "6511552" }
